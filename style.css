@@ -1,0 +1,103 @@
+body {
+    margin: 0 5px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+input {
+    height: 40px; 
+    width: 260px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: lightblue;
+    width: 70px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.sign {
+    background-color: lightcoral;
+}
+
+a {
+    text-decoration: none;
+}
+#header {
+    margin: 0px;
+    display: block;
+}
+
+/* #mainNav {
+
+} */
+
+#mainNav ul {
+    list-style: none;
+}
+
+#mainNav ul li {
+    float: left;
+    margin: 25px;
+}
+
+#mainNav ul li a {
+    background-color: tomato;
+    width: 15%;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* #childNav ul li {
+    float: none;
+}
+
+#childNav ul li a {
+    background-color: tomato;
+    width: 15%;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+ */
+
+/* #mainNav ul li ul li {
+    
+} */
+
+#footer {
+    padding: 30px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    clear: both;
+}
+.socials a {
+    text-transform: capitalize;
+    font-size: large;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.socials a img {
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+#img {
+    text-align: center;
+}
