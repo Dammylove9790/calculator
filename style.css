@@ -1,13 +1,128 @@
-body {
-    margin: 0 5px;
-    border-radius: 10px;
-    border: 1px solid red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-input {
-    height: 40px; 
+body {
+}
+
+.header {
+}
+
+.mainNav {
+    background-color: black;
+    height: 70px;
+    
+}
+
+.header_logo{
+    margin: 0 40px 0 20px;
+}
+
+.header_logo h1{
+    color:tomato; 
+    text-transform: uppercase; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0 3px 4px white;
+    height: 70px;
+    line-height: 70px;
+}
+
+
+.mainNav nav li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.mainNav nav li a {
+    color: white;
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.mainNav nav li a:hover {
+    background-color: tomato;
+    font-size: large;
+}
+
+.mainNav nav ul {
+    position: absolute;
+    display: none;
+}
+
+.mainNav nav li:hover ul{
+    display: block;
+    background-color: black;
+}
+
+.mainNav nav ul li {
+
+}
+
+.mainNav nav ul a {
+    text-align: left;
+    width: 250px;
+}
+
+
+.calculator_header {
+   margin: 20px 0; 
+}
+
+
+.input1 {
+    font-size: 17px;
+    text-align: center;
+    height: 100px; 
     width: 260px;
+    border: 0;
     border-radius: 10px;
+    box-shadow: 0 3px 6px black;
+}
+
+.input2 {
+    font-size: 17px;
+    text-align: center; 
+    margin: 0 auto 20px;
+    padding: 5px;
+    height: 100px; 
+    width: 260px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(36, 36, 36);
+}
+
+.inputchange1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 10px;
+    margin: 0 10px;
+    text-align: left;
+    height: 55px; 
+    line-height: 50px; 
+    width: 230px;
+    border-bottom: 4px solid;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.inputchange2 {
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0 20px;
+    color: green;
+    text-align: right;
+    height: 35px;
+    line-height: 35px; 
+    width: 250px;
+    opacity: 0.5;
 }
 
 button {
@@ -28,54 +143,12 @@ button:hover {
 }
 
 .sign {
-    background-color: lightcoral;
+    background-color: tomato;
 }
 
 a {
     text-decoration: none;
 }
-#header {
-    margin: 0px;
-    display: block;
-}
-
-/* #mainNav {
-
-} */
-
-#mainNav ul {
-    list-style: none;
-}
-
-#mainNav ul li {
-    float: left;
-    margin: 25px;
-}
-
-#mainNav ul li a {
-    background-color: tomato;
-    width: 15%;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* #childNav ul li {
-    float: none;
-}
-
-#childNav ul li a {
-    background-color: tomato;
-    width: 15%;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
- */
-
-/* #mainNav ul li ul li {
-    
-} */
 
 #footer {
     padding: 30px;
@@ -83,21 +156,4 @@ a {
     text-align: center;
     background-color: black;
     clear: both;
-}
-.socials a {
-    text-transform: capitalize;
-    font-size: large;
-    display: inline-block;
-    width: 100px;
-    height: 40px;
-    margin-left: 20px;
-}
-
-.socials a img {
-    float: right;
-    width: 20px;
-    height: 20px;
-}
-#img {
-    text-align: center;
 }

@@ -1,24 +1,23 @@
-// let x = document.getElementById().innerHTML;
-let inputArea = document.querySelector("#input");
-let button = document.querySelector("button");
-let result = document.getElementById("demo");
 
 
-function buttonClick(num){
-    inputArea.value += num;
+let inputArea = document.getElementById('inputarea');
+let inputAnswer = document.getElementById('inputanswer');
+
+function buttonClick(btnvalue){
+    inputArea.style.opacity = 1;
+    inputArea.innerHTML += btnvalue;
 }
 
 
-function calculate () {
-    try {
-        inputArea.value = eval(inputArea.value);
-    } catch (error) {
-        alert ("Input a valid number");
-    } 
+function calculate() {
+    if (!inputArea.innerHTML) {
+        inputArea.placeholder = "Invalid input";
+    } else {
+        inputAnswer.style.opacity = 1;
+        inputAnswer.innerHTML = "= " + eval(inputArea.innerHTML);
+    }
 }
 
-
-// button.forEach(button=>{
-//     button.addEventListener("click",textArea);
-// });
-// console.log();
+function buttonclr () {
+    inputArea.innerHTML = " ";
+}

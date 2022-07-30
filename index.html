@@ -8,50 +8,76 @@
     <title>Mathematical Tools</title>
 </head>
 <body id="body">
-    <div id="header">
-        <div id="mainNav">
-            <ul>
+    <div class="header">
+        <div class="mainNav">
+            <div class="header_logo" style="float: left;">
+                <h1>Maths tools</h1>
+            </div>
+    
+            <!-- My old Navbar with old css-->
+            <!-- <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="calculator.html"> Calculator </a></li>
-                <li><a href="tempTool">Temp Tools</a></li>
-                    <ul id="childNav">
+                <li><a href="tempTool">Temp Tools</a>
+                    <ul class="childNav">
                         <li><a href="celToFah">Convert To Celsius</a></li>
                         <li><a href="fahToCel">Convert To Fahrenheit</a></li>
                     </ul>
-            </ul>
+                </li>
+            </ul> -->
+
+            <nav class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html"> Calculator </a></li>
+                <li><a href="tempTool">Temp Tools</a>
+                    <ul class="childNav">
+                        <li><a href="celToFah">Convert To Celsius</a></li>
+                        <li><a href="fahToCel">Convert To Fahrenheit</a></li>
+                    </ul>
+                </li>
+            </nav>
         </div>
     </div>
     <br>
     <br>
-    <div id="calculator" style="text-align: center;">
+    <div id="calculator" style="text-align: center; margin: 0 auto;">
 
-        <h1 style="text-decoration: underline; text-transform: uppercase; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Calculator</h1>
+        <div class="calculator_header">
+            <h1 style="text-decoration: underline; text-transform: uppercase; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Calculator</h1>
+        </div>
 
-        <p id="demo">kay money</p>
 
 
-        <input id="input" type="text" placeholder="Answer shows here" style="text-align: center;">
-        <br>
-        <br>
-        <button onclick="buttonClick(this.innerHTML)">1</button>
-        <button onclick="buttonClick(this.innerHTML)">2</button>
-        <button onclick="buttonClick(this.innerHTML)">3</button>
-        <br>
-        <button onclick="buttonClick(this.innerHTML)">4</button>
-        <button onclick="buttonClick(this.innerHTML)">5</button>
-        <button onclick="buttonClick(this.innerHTML)">6</button>
-        <br>
-        <button onclick="buttonClick(this.innerHTML)">7</button>
-        <button onclick="buttonClick(this.innerHTML)">8</button>
-        <button onclick="buttonClick(this.innerHTML)">9</button>
-        <br>
-        <button class="sign" onclick="buttonClick(this.innerHTML)">-</button>
-        <button class="sign" onclick="buttonClick(this.innerHTML)">+</button>
-        <button class="sign" onclick="buttonClick(this.innerHTML)">/</button>
-        <br>
-        <button class="sign" onclick="buttonClick(this.innerHTML)">X</button>
-        <button class="sign" onclick="buttonClick(this.innerHTML)">%</button>
-        <button style="background-color: green;" onclick="calculate()">=</button>
+        <div class="calculator_input">
+            <div id='input2' class='input2'>
+                <div id='inputarea' class='inputchange1'></div>
+                <div id='inputanswer' class='inputchange2'>Answer</div>
+            </div>
+            <!-- <div id='input1'>
+            <input id="input" onclick="getready()" class="input1" type="text" placeholder="Answer shows here"></div> -->
+            <button id="" onclick="buttonClick(this.innerHTML)">1</button>
+            <button id="" onclick="buttonClick(this.innerHTML)">2</button>
+            <button id="" onclick="buttonClick(this.innerHTML)">3</button>
+            <br>
+            <button id="" onclick="buttonClick(this.innerHTML)">4</button>
+            <button id="" onclick="buttonClick(this.innerHTML)">5</button>
+            <button id="" onclick="buttonClick(this.innerHTML)">6</button>
+            <br>
+            <button id="" onclick="buttonClick(this.innerHTML)">7</button>
+            <button id="" onclick="buttonClick(this.innerHTML)">8</button>
+            <button id="" onclick="buttonClick(this.innerHTML)">9</button>
+            <br>
+            <button id="" class="sign" onclick="buttonClick(this.innerHTML)">-</button>
+            <button id="" onclick="buttonClick(this.innerHTML)">0</button>
+            <button id="" class="sign" onclick="buttonClick(this.innerHTML)">/</button>
+            <br>
+            <button id="" class="sign" onclick="buttonClick(this.innerHTML)">+</button>
+            <button id="" class="sign" onclick="buttonClick(this.value)" value="**">e</button>
+            <button id="" class="sign" onclick="buttonClick(this.innerHTML)">x</button>
+            <br>
+            <button id="" style="background-color: red; " onclick="buttonclr()">Clr</button>
+            <button id="" style="background-color: green;" onclick="calculate()">=</button>
+        </div>
         <br>
         <br>
     </div>
@@ -59,16 +85,6 @@
 
 
     <div id="footer">
-        <p style="font-size: 20px; text-decoration: underline;">
-            Connnect With Us:
-        </p>
-        <p class="socials">
-            <a href="https://www.facebook.com" >facebook <img src="socialIcons/facebook.png" alt="facebook" ></a>    
-            <a href="https://www.twitter.com">twitter<img src="socialIcons/twitter.png" alt="twitter" ></a>
-            <a href="https://www.instagram.com">instagram<img src="socialIcons/instagram.png" alt="Instagram" ></a>
-            <a href="https://www.youtube.com">youtube<img src="socialIcons/youtube.png" alt="Youtube" ></a>    
-            <a href="https://www.tiktok.com">tiktok<img src="socialIcons/tiktok.png" alt="" ></a>       
-        </p>    
     </div>
 
 
