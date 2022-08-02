@@ -18,6 +18,10 @@ function calculate() {
     }
 }
 
-function buttonclr () {
-    inputArea.innerHTML = " ";
+function buttonclr() {
+    inputArea.innerHTML = "";
+}
+
+function buttonBackspace() {
+    inputArea.innerHTML = inputArea.innerHTML.slice(0, (inputArea.innerHTML.length)-1);
 }

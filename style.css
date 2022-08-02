@@ -71,7 +71,7 @@ body {
 
 
 .calculator_header {
-   margin: 20px 0; 
+   margin-bottom: 20px; 
 }
 
 
@@ -131,7 +131,7 @@ button {
     height: 40px;
     font-size: large;
     font-weight: bold;
-    margin: 10px;
+    margin: 5px 10px;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
